@@ -28,8 +28,9 @@ The goal is to serve as a **personal knowledge base** and a **reference for Reac
 ### 1️⃣ Cards
 - Component composition
 - Reusable UI patterns
+- Card-based layouts
 
-📄 `Cards/Cards.md`
+📄 `1. Cards/Cards.md`
 
 ---
 
@@ -39,7 +40,7 @@ The goal is to serve as a **personal knowledge base** and a **reference for Reac
 - Inline styles
 - Styling best practices in React
 
-📂 `Styling with CSS/`
+📂 `2. Styling with CSS/`
 - `Styling React Components with CSS.md`
 - `CSS Modules.md`
 - `Inline Styles.md`
@@ -49,9 +50,10 @@ The goal is to serve as a **personal knowledge base** and a **reference for Reac
 ### 3️⃣ Props
 - Passing data between components
 - Read-only nature of props
+- Parent → child communication
 - Legacy patterns (for historical understanding)
 
-📂 `Props/`
+📂 `3. Props/`
 - `React Props.md`
 - `propTypes - legacy.md`
 - `defaultProps - legacy.md`
@@ -60,26 +62,28 @@ The goal is to serve as a **personal knowledge base** and a **reference for Reac
 
 ### 4️⃣ Conditional Rendering
 - Rendering UI based on conditions
-- Logical operators and ternaries
+- Logical operators (`&&`)
+- Ternary expressions
+- Conditional component rendering
 
-📄 `Conditional Rendering/Conditional Rendering.md`
+📄 `4. Conditional Rendering/Conditional Rendering.md`
 
 ---
 
 ### 5️⃣ Render Lists
-- Rendering collections
-- Keys
+- Rendering collections with `.map()`
+- Keys and reconciliation
 - Data manipulation before rendering
-- Sorting and ordering
+- Sorting, ordering, and filtering
 
-📂 `Render Lists/`
+📂 `5. Render Lists/`
 - `Render Lists.md`
 - `Ordening, Sortening and Data Manipulation.md`
 
- Example:
+Example:
 ```
 
-Render Lists/example-1/
+5. Render Lists/example-1/
 
 ```
 
@@ -87,27 +91,29 @@ Render Lists/example-1/
 
 ### 6️⃣ Click Events
 - Event handling in React
+- `onClick` usage
 - Callback functions vs inline arrow functions
-- Best practices
+- Best practices and performance considerations
 
-📂 `Click Events/`
+📂 `6. Click Events/`
 - `Click Events.md`
 - `Callback function vs Arrow Function onClick.md`
 
 ---
 
 ### 7️⃣ `useState` Hook
-- State management
+- State management in functional components
+- Initial state and setters
 - Controlled components
-- Updating state correctly
+- Correct state updates
 
-📂 `useState Hook/`
+📂 `7. useState Hook/`
 - `useState.md`
 
 Example:
 ```
 
-useState Hook/example-Counter/
+7. useState Hook/example-Counter/
 
 ```
 
@@ -115,16 +121,89 @@ useState Hook/example-Counter/
 
 ### 8️⃣ `onChange` Event Handler
 - Controlled vs uncontrolled inputs
-- Handling text, checkbox, radio inputs
-- State synchronization
+- Handling text inputs
+- Checkboxes and radio buttons
+- State synchronization with form elements
 
-📂 `onChange event handler/`
+📂 `8. onChange event handler/`
 - `onChange.md`
 
 Example:
 ```
 
-onChange event handler/example/
+8. onChange event handler/example/
+
+```
+
+---
+
+### 9️⃣ Color Picker App (`onChange` example)
+- Practical usage of `onChange`
+- Controlled color input
+- Dynamic styling based on state
+- Real-world interactive UI example
+
+📂 `9. Color Picker app - onChange example/`
+- `Color Picker.md`
+
+Example:
+```
+
+9. Color Picker app - onChange example/example/
+
+```
+
+---
+
+### 🔟 Updater Function
+- State updater functions
+- Safe updates based on previous state
+- Handling asynchronous state updates
+- Best practices for multiple updates
+
+📂 `10. Updater Function/`
+- `Updater Function.md`
+
+Example:
+```
+
+10. Updater Function/example/
+
+```
+
+---
+
+### 1️⃣1️⃣ Update Objects in State
+- Immutability principles
+- Updating nested objects
+- Spread operator usage
+- Avoiding direct mutations
+
+📂 `11. Update Objects in State/`
+- `update Objects in State.md`
+
+Example:
+```
+
+11. Update Objects in State/example/
+
+```
+
+---
+
+### 1️⃣2️⃣ Update Arrays in State
+- Adding, removing, and updating items
+- `.map()`, `.filter()`, and `.concat()`
+- Immutable array operations
+- Common React patterns
+
+📂 `12. Update Arrays in State/`
+- `update Arrays in state.md`
+
+Example:
+```
+
+12. Update Arrays in State/example/
 
 ```
 
@@ -150,6 +229,7 @@ Planned additions include:
 - Forms & validation
 - Component patterns
 - Performance optimizations
+- Advanced state management patterns
 
 ---
 
@@ -157,8 +237,6 @@ Planned additions include:
 
 - Reinforce React fundamentals
 - Serve as a quick reference
-- Help structure learning logically
-- Document practical experiments and examples
 - Examples are intentionally minimal to focus on concepts
 - Written with **React + TypeScript** in mind
 
